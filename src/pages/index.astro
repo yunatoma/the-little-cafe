@@ -5,6 +5,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // 各セクションで使用するコンポーネントをインポート
 import MenuCard from '../components/MenuCard.astro';
 import AboutSection from '../components/About.astro';
+
+import menu01Img from '/public/img/menu01.webp';
+import menu02Img from '/public/img/menu02.webp';
+import menu03Img from '/public/img/menu03.webp';
 ---
 
 <BaseLayout title="The Little Cafe">
@@ -13,17 +17,17 @@ import AboutSection from '../components/About.astro';
             <h2 class="menu__heading">MENU</h2>
             <div class="menu__card-container">
                 <MenuCard
-                    image="/public/img/menu01.webp"
+                    image={menu01Img}
                     title="カフェラテ（ICE・HOT）"
                     description="お好みのブレンドコーヒーと<br>厳選したミルクのカフェラテ"
                 />
                 <MenuCard
-                    image="/public/img/menu02.webp"
+                    image={menu02Img}
                     title="コーヒー（ICE・HOT）"
                     description="お好みの豆をブレンドした<br>コーヒー本来の味が味わえる"
                 />
                 <MenuCard
-                    image="/public/img/menu03.webp"
+                    image={menu03Img}
                     title="カップケーキ（各種）"
                     description="コーヒーのお供に<br>日替わり常時５種類"
                 />

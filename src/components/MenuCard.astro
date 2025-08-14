@@ -1,10 +1,10 @@
 ---
-// Propsとして画像、タイトル、説明文を受け取る
+import { Image } from 'astro:assets';
 const { image, title, description } = Astro.props;
 ---
 <div class="menu-card">
     <div class="menu-card__image-wrapper">
-        <img src={image} alt={title} class="menu-card__image">
+        <Image src={image} alt={title} class="menu-card__image" width={300} height={250}/>
     </div>
     <div class="menu-card__content">
         <h3 class="menu-card__title">{title}</h3>
