@@ -29,10 +29,11 @@
   }
 
   &__heading {
-    font-size: var.$font-size-large;
-    font-weight: bold;
+    font-size: var.$font-size-medium;
+    font-weight: 300;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
 
     &::after {
       content: "";
@@ -40,12 +41,7 @@
       width: 50px;
       height: 2px;
       background-color: var.$primary-color;
-      margin-top: 1rem;
-
-      @media (max-width: 768px) {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      margin: 1rem auto 0;
     }
   }
 
