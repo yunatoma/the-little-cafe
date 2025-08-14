@@ -1,7 +1,7 @@
 @use "../variables" as var;
 
 .about-section {
-  padding: 6rem 5rem;
+  padding: 44px 6rem 51px 6rem;
   background-color: var.$secondary-bg-color;
   text-align: center;
 
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 
     @media (max-width: 768px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 2rem;
     }
   }
@@ -69,7 +69,9 @@
     background-color: var.$secondary-color;
     color: white;
     padding: 1rem 3rem;
-    border: none;
+    width: 250px;
+    height: 55px;
+    border: 1px solid var.$primary-color;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
@@ -78,7 +80,6 @@
     font-weight: 300;
     font-style: Light;
     font-size: 25px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;

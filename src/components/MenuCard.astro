@@ -8,6 +8,6 @@ const { image, title, description } = Astro.props;
     </div>
     <div class="menu-card__content">
         <h3 class="menu-card__title">{title}</h3>
-        <p class="menu-card__description">{description}</p>
+        <p class="menu-card__description" set:html={description}></p>
     </div>
 </div>
