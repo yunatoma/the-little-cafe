@@ -1,0 +1,46 @@
+@use "../variables" as var;
+
+.header {
+  background-color: white;
+  color: var.$primary-color;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 69px 8px 60px;
+  }
+
+  &__logo {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+
+    font-family: Noto Sans JP;
+    font-weight: 300;
+    font-style: Light;
+    font-size: var.$font-size-small;
+    line-height: 33px;
+    letter-spacing: 0%;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__nav-link {
+    font-weight: 300;
+    font-style: Light;
+    font-size: var.$font-size-xsmall;
+    line-height: 33px;
+    letter-spacing: 0%;
+
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: var.$accent-color;
+    }
+  }
+}

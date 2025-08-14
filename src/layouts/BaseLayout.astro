@@ -1,0 +1,27 @@
+---
+// 共通のコンポーネントをインポート
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+// 全体的なスタイルシートをインポート
+import '../styles/global.scss';
+
+// Propsでタイトルを受け取る（デフォルト値を設定）
+const { title = 'The Little Cafe' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+</head>
+<body>
+    <Header />
+
+    <slot />
+
+    <Footer />
+</body>
+</html>

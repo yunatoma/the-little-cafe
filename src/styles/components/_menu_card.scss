@@ -1,0 +1,51 @@
+@use "../variables" as var;
+.menu-card {
+  width: 300px; /* カードの幅を調整 */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    height: 200px; /* 画像の高さを固定 */
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: var.$font-size-small;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: var.$font-size-xsmall;
+    color: var.$secondary-color;
+    line-height: 1.5;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}

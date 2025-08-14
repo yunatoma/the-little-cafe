@@ -1,0 +1,40 @@
+.header {
+  background-color: white;
+  color: #333;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+@media (max-width: 768px) {
+  .header__top {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+.header__logo {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+@media (max-width: 768px) {
+  .header__nav {
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+.header__nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+}
+.header__nav-link:hover {
+  color: #e5a920;
+}/*# sourceMappingURL=global.css.map */

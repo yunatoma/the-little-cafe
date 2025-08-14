@@ -1,0 +1,35 @@
+---
+// ページ全体に適用するレイアウトをインポート
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// 各セクションで使用するコンポーネントをインポート
+import MenuCard from '../components/MenuCard.astro';
+import AboutSection from '../components/About.astro';
+---
+
+<BaseLayout title="The Little Cafe">
+    <main>
+        <section class="menu">
+            <h2 class="menu__heading">MENU</h2>
+            <div class="menu__card-container">
+                <MenuCard
+                    image="/public/img/menu01.webp"
+                    title="カフェラテ（ICE・HOT）"
+                    description="お好みのブレンドをブレンドした香り豊かな大人のカフェラテ"
+                />
+                <MenuCard
+                    image="/public/img/menu02.webp"
+                    title="コーヒー（ICE・HOT）"
+                    description="お好みの豆をブレンドしたコーヒー本来の味が味わえる"
+                />
+                <MenuCard
+                    image="/public/img/menu03.webp"
+                    title="カップケーキ（各層）"
+                    description="ホームメイドな優しさにこだわった旬な彩り"
+                />
+            </div>
+        </section>
+
+        <AboutSection />
+    </main>
+</BaseLayout>

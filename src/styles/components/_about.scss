@@ -1,0 +1,105 @@
+@use "../variables" as var;
+
+.about-section {
+  padding: 6rem 5rem;
+  background-color: var.$secondary-bg-color;
+  text-align: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__text-wrapper {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    font-size: var.$font-size-large;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: var.$primary-color;
+      margin-top: 1rem;
+
+      @media (max-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__sub-heading {
+    font-size: var.$font-size-medium-small;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 33px;
+    letter-spacing: 0%;
+  }
+
+  &__description {
+    font-size: var.$font-size-base;
+    line-height: 1.6;
+    color: var.$secondary-color;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-style: Light;
+    line-height: 33px;
+    letter-spacing: 0%;
+  }
+
+  &__button {
+    background-color: var.$secondary-color;
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+
+    font-family: Noto Sans JP;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    &:hover {
+      background-color: darken(var.$secondary-color, 10%);
+    }
+  }
+
+  &__image-wrapper {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

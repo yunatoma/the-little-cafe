@@ -1,0 +1,18 @@
+// 変数を定義したパーシャルをインポート
+@use "variables";
+
+// コンポーネントのスタイルをインポート
+@use "components/header";
+@use "components/hero";
+@use "components/menu_card";
+@use "components/index";
+@use "components/about";
+
+// リセットCSSとサイトの基本スタイルをインポート
+@use "base";
+// 他のコンポーネントのスタイルもここに追加
+
+// サイト全体に適用するフォントを設定
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
