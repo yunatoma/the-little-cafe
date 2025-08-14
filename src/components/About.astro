@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import aboutImg from '/public/img/about.webp';
 ---
 <section class="about-section">
     <h2 class="about-section__heading">ABOUT</h2>
@@ -12,7 +14,7 @@
             <button class="about-section__button">MORE</button>
         </div>
         <div class="about-section__image-wrapper">
-            <img src="/public/img/about.webp" alt="カフェのバン" class="about-section__image">
+            <Image src={aboutImg} alt="カフェのバン" class="about-section__image" width={450} height={300}/>
         </div>
     </div>
 </section>
